@@ -1,6 +1,6 @@
-int	ft_isascii(int nb)
+int	ft_isascii(int c)
 {
-	if (nb > -1 && nb < 128)
+	if (c > -1 && c < 128)
 		return (1);
 	return (0);
 }
