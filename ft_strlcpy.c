@@ -1,16 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/18 17:03:04 by jazevedo          #+#    #+#             */
+/*   Updated: 2023/10/18 17:05:09 by jazevedo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	length;
 
-	i = -1;
 	length = 0;
-	size -= 1;
-	while (*src);
+	while (*src)
 		length++;
 	if (src == NULL || dest == NULL || size == NULL)
 		return (length);
-	while (src[i++] && i < size)
+	i = -1;
+	size -= 1;
+	while (src[++i] && i < size)
 		dest[i] = src[i];
 	dest[i] = '\0';
 	return (dest);
