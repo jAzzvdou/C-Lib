@@ -5,37 +5,45 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 17:53:06 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/18 18:20:43 by jazevedo         ###   ########.fr       */
+/*   Created: 2023/10/19 16:08:25 by jazevedo          #+#    #+#             */
+/*   Updated: 2023/10/19 16:10:00 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strnstr(const char *big, const char *little, size_t len)
+static int	compare(const void *s1, const void *s2, size_t n)
 {
 	size_t		i;
-	size_t		ii;
-	const char	*memcmp_big;
-	const char	*memcmp_little;
-	size_t		diference;
+	const char	*new_s1;
+	const char	*new_s2;
 
-	if (*big == NULL || len == NULL)
+	new_s1 = s1;
+	new_s2 = s2;
+	i = -1;
+	while (++i != n)
+		if (s1[i] != s2[i])
+			return (new_s1[i] - new_s2[i]);
+	return (NULL);
+}
+
+char	*strnstr(const char *big, const char *little, size_t len)
+{
+	size_t	i;
+	size_t	size_big;
+
+	if (len == 0)
 		return (NULL);
-	if (*little == NULL)
+	if (*little == '\0')
 		return ((char *)big);
 	i = 0;
-	while (little[i])
+	while (big[i])
 		i++;
-	while (*big && i <= len)
+	size_big = i;
+	while (*big && size_big <= len)
 	{
-		ii = -1;
-		memcmp_big = big;
-		memcmp_little = little;
-		while (++ii != i)
-			if (big[ii] != little[ii])
-				diference = memcmp_big[i] - memcmp+little[i];
-		if (diference == 0)
+		if (compare(big, little, size_big) == 0)
 			return ((char *)big);
-		len--:
+		len--;
 		big++;
-	}	
+	}
+	return (NULL);
 }

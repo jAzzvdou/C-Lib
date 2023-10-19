@@ -1,35 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 16:55:04 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/19 14:10:38 by jazevedo         ###   ########.fr       */
+/*   Created: 2023/10/19 14:45:49 by jazevedo          #+#    #+#             */
+/*   Updated: 2023/10/19 16:32:11 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*calloc(size_t nmemb, size_t size)
 {
-	size_t		i;
-	char		*new_dest;
-	const char	*new_src;
-	const char	*temp;
+	size_t	i;
+	void	*ptr;
 
-	new_dest = dest;
-	new_src = src;
-	i = -1;
-	while (++i < n || *src)
-	{
-		temp[i] = new_src[i];
-		src++;
-	}
-	i = -1;
-	while (++i < n || *dest)
-	{
-		new_dest[i] = temp[i];
-		dest++;
-	}
-	return (dest);
-}
+	i = nmemb * size;
+	if (i == 0)
+		i = 1;
+	ptr = malloc(i);
+	if (ptr == NULL)
+		return (NULL);
+	while (i--)
+		ptr[i] = 0;
+	return (ptr);
+}	
