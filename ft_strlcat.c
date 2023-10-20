@@ -6,9 +6,11 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:57:14 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/18 16:59:49 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/20 00:06:54 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlcat(void *dest, const char *src, int size)
 {

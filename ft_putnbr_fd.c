@@ -6,9 +6,11 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:12:23 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/18 15:12:32 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/20 00:02:07 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

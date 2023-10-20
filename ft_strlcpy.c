@@ -6,9 +6,11 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:03:04 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/18 17:05:09 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/20 00:07:27 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {

@@ -6,16 +6,16 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:33:08 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/19 16:38:58 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/20 00:04:36 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	size_t	i;
 
-	if (s == NULL || f == NULL)
-		return ;
 	i = -1;
 	while (s[++i])
 		f(i, s + 1);

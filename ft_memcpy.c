@@ -6,9 +6,11 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:06:48 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/18 17:07:20 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/19 23:52:32 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memcpy(void dest, const void src, size_t n)
 {

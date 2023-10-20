@@ -6,9 +6,11 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:07:33 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/18 17:08:11 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/20 00:01:50 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*memset(void s, int c, size_t n)
 {

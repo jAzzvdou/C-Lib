@@ -6,9 +6,11 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:37:15 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/19 14:54:46 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/19 23:44:00 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

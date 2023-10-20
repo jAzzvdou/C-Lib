@@ -6,9 +6,11 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:37:00 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/18 17:02:47 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/20 00:02:18 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

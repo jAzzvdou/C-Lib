@@ -6,19 +6,11 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:06:43 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/19 16:07:04 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/20 00:06:15 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static size_t	ft_strlen(const char *str)
-{
-	size_t	len;
-
-	len = 0;
-	while (str[len] != '\0')
-		len++;
-	return (len);
-}
+#include "libft.h"
 
 static char	*ft_strcpy(char *dest, char *src)
 {
@@ -32,19 +24,6 @@ static char	*ft_strcpy(char *dest, char *src)
 	}
 	dest[i] = '\0';
 	return (dest);
-}
-
-static char	*ft_strdup(char *s)
-{
-	char	*new_str;
-	size_t	len;
-
-	len = ft_strlen(s);
-	new_str = malloc(sizeof(char) * (len + 1));
-	if (new_str == NULL)
-		return (NULL);
-	ft_strcpy(new_str, s);
-	return (new_str);
 }
 
 static size_t	get_total_length(int size, char **str, char *sep)

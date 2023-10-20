@@ -6,9 +6,11 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:08:25 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/19 16:10:00 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/20 00:08:18 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static int	compare(const void *s1, const void *s2, size_t n)
 {
