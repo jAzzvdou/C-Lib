@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:12:23 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/20 00:02:07 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/20 18:32:59 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@ void	ft_putnbr_fd(int n, int fd)
 		write(fd, "-2147483648", 11);
 	if (n < 0 && n > -2147483648)
 	{
-		ft_putnbr_fd(n * -1);
+		ft_putnbr_fd(n * -1, fd);
 		write(1, "-", 1);
 	}
 	else if (n > 9)
 	{
-		ft_putnbr_fd(n / 10);
-		ft_putnbr_fd(n % 10);
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
 	}
 	n += '0';
 	write(fd, &n, 1);

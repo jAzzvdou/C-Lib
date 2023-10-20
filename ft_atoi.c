@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:04:29 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/19 23:43:44 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/20 18:05:21 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_atoi(const char *nptr)
 
 	nb = 0;
 	mult = 1;
-	while (*nptr > 8 && *nptr < 14 || *nptr == ' ')
+	while ((*nptr > 8 && *nptr < 14) || *nptr == ' ')
 		nptr++;
 	if (*nptr == '-')
 	{

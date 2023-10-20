@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:08:25 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/20 00:08:18 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/20 18:47:06 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 static int	compare(const void *s1, const void *s2, size_t n)
 {
-	size_t		i;
-	const char	*new_s1;
-	const char	*new_s2;
+	size_t	i;
+	char	*new_s1;
+	char	*new_s2;
 
-	new_s1 = s1;
-	new_s2 = s2;
+	new_s1 = (char *)s1;
+	new_s2 = (char *)s2;
 	i = -1;
 	while (++i != n)
-		if (s1[i] != s2[i])
+		if (new_s1[i] != new_s2[i])
 			return (new_s1[i] - new_s2[i]);
-	return (NULL);
+	return (0);
 }
 
 char	*strnstr(const char *big, const char *little, size_t len)
@@ -33,7 +33,7 @@ char	*strnstr(const char *big, const char *little, size_t len)
 	size_t	size_big;
 
 	if (len == 0)
-		return (NULL);
+		return (0);
 	if (*little == '\0')
 		return ((char *)big);
 	i = 0;
@@ -47,5 +47,5 @@ char	*strnstr(const char *big, const char *little, size_t len)
 		len--;
 		big++;
 	}
-	return (NULL);
+	return (0);
 }

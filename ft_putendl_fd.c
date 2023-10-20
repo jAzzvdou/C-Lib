@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 00:09:50 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/20 00:12:58 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/20 18:32:02 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	return (ft_putstr_fd(s, fd) + write(fd, "\n", 1));
+	ft_putstr_fd(s, fd);
+	write(fd, "\n", 1);
 }

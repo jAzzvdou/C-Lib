@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:28:04 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/20 00:03:53 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/20 18:33:34 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strdup(const char *s)
 	if (final == NULL)
 		return (NULL);
 	i = -1;
-	while (s[++n])
+	while (s[++i])
 		final[i] = s[i];
 	final[i] = '\0';
 	return (final);
