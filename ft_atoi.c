@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:04:29 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/20 18:05:21 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/23 14:52:23 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,14 @@ int	ft_atoi(const char *nptr)
 		nptr++;
 	if (*nptr == '-')
 	{
-		mult = -1;
+		mult = -mult;
 		nptr++;
 	}
-	else if (*nptr == '+')
+	else if (*nptr == '-' || *nptr == '+')
 		nptr++;
-	while (ft_isdigit(*nptr))
+	while (*nptr >= '0' && *nptr <= '9')
 	{
-		nb *= 10 + *nptr - '0';
+		nb = (nb * 10) + (*nptr - '0');
 		nptr++;
 	}
 	return (nb * mult);
