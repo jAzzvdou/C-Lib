@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 16:26:02 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/24 01:38:22 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:20:15 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@ static size_t	sub_str(char const *s, char c)
 	{
 		if (*s != c)
 			length++;
-		while (*s != c)
+		while (*s && *s != c)
+			s++;
+		while (*s && *s == c)
 			s++;
 		s++;
 	}
@@ -45,6 +47,8 @@ char	**ft_split(char const *s, char c)
 	size_t	wordsize;
 	char	**final;
 
+	if (s == NULL)
+		return (NULL);
 	words = sub_str(s, c);
 	final = malloc(sizeof(char *) * (words + 1));
 	if (final == NULL)
