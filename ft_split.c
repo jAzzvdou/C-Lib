@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 16:26:02 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/24 10:20:15 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/24 16:31:34 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ char	**ft_split(char const *s, char c)
 	i = -1;
 	while (++i < words)
 	{
-		while (*s && *s == c)
+		while (*s == c)
 			s++;
 		wordsize = 0;
 		while (s[wordsize] && s[wordsize] != c)
