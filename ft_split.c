@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 16:26:02 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/24 16:31:34 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/25 00:11:24 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ static size_t	sub_str(char const *s, char c)
 			s++;
 		while (*s && *s == c)
 			s++;
-		s++;
 	}
 	return (length);
 }
