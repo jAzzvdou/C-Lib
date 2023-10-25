@@ -34,9 +34,13 @@ SRCS	=	ft_atoi.c \
 		ft_substr.c \
 		ft_tolower.c \
 		ft_toupper.c
+
+SRCS_BONUS 	=	ft_lstnew.c
 		
 
 OBJS	=	$(SRCS:.c=.o)
+
+OBJS_BONUS	=	$(SRCS_BONUS:.c=.o)
 
 CC	=	cc
 
@@ -60,4 +64,7 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+bonus: $(OBJS) $(OBJS_BONUS)
+		ar rcs $(NAME) $(OBJS) $(OBJS_BONUS)
+
+.PHONY: all clean fclean re bonus
