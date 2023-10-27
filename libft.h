@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 00:16:29 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/26 15:43:06 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/27 15:31:46 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,11 +57,12 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
-void	ft_lsttiter(t_list *lst, void (*f)(void *));
+void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);

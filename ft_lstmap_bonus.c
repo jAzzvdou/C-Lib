@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/26 15:46:41 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/26 15:53:16 by jazevedo         ###   ########.fr       */
+/*   Created: 2023/10/27 16:33:28 by jazevedo          #+#    #+#             */
+/*   Updated: 2023/10/27 16:33:30 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new;
 	t_list	*new_l;
 
+	if (lst == NULL)
+		return (NULL);
 	new_l = NULL;
 	while (lst)
 	{

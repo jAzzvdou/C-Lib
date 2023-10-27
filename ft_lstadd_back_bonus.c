@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/25 15:14:34 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/25 15:14:36 by jazevedo         ###   ########.fr       */
+/*   Created: 2023/10/27 16:31:02 by jazevedo          #+#    #+#             */
+/*   Updated: 2023/10/27 16:31:11 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,10 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
+	if (*lst == NULL)
+	{
+		*lst = new;
+		return ;
+	}
 	ft_lstlast(*lst)->next = new;
 }
