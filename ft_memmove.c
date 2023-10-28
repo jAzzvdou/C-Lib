@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:55:04 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/20 18:15:56 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 11:13:54 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		ft_memcpy(dest, src, n);
 	return ((void *)dest);
 }
+/*
+Essa função é parecida com a ft_memcpy, mas com uma pequena difereça:
+Diferentemente ft_memcpy, a ft_memmove consegue sobrepor N caracteres (n)
+iniciais de uma string (src) em outra string (dest). Ou seja, essa função
+consegue substitur caracteres de uma string, o que a ft_memcpy não é capaz
+de fazer.
+*/

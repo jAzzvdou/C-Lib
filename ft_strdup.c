@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:28:04 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/20 18:33:34 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 12:07:16 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,7 @@ char	*ft_strdup(const char *s)
 	final[i] = '\0';
 	return (final);
 }
+/*
+Essa função aloca memória para uma string N (s) e copia toda essa string
+para a memória alocada para a mesma.
+*/

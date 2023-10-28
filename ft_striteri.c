@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:33:08 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/23 15:19:52 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 12:14:32 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	while (s[++i])
 		f(i, s + i);
 }
+/*
+Essa função vai jogar uma string N (s) dentro de uma outra função, N (f).
+Depois irá imprimir o resultado da função N.
+*/

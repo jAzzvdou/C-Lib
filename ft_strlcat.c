@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:57:14 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/23 13:53:59 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 12:21:41 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dst_size + i] = '\0';
 	return (dst_size + ft_strlen(src));
 }
+/*
+Essa função vai concatenar N caracteres (size) de uma string X (src)
+em uma string Y (dst).
+*/

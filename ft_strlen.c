@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:31:45 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/19 23:40:18 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 12:29:58 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,7 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
+/*
+Essa função vai contar a quantidade de caracteres
+que uma string X (str) possuí.
+*/

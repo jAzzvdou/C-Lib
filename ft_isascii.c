@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:09:25 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/19 23:47:30 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 10:28:06 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,8 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
+/*
+Essa função verifica se o argumento passado como parâmetro (c)
+é um número presente na tabela ASCII. Caso seja, retorna um número
+diferente de zero, e, caso não seja, retorna zero.
+*/

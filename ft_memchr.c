@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:52:40 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/20 18:12:17 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 11:37:17 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return (&new_s[i]);
 	return (NULL);
 }
+/*
+Essa função verifica se existe um caractere N (c) dentro de uma
+string N (s). Caso exista, retorna uma string de tamanho N (n)
+após o caratere encontrado, e, caso não exista, retorna NULL.
+*/

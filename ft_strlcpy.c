@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:03:04 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/23 14:01:13 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 12:25:28 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
+/*
+Essa função vai copiar N caracteres (size) iniciais de uma string X (str)
+e colar no final de uma string Y (dst).
+*/

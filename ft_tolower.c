@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:31:28 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/20 00:08:51 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 12:32:35 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,6 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
+/*
+Essa função transforma uma letra N (c) maiúscula em minúscula.
+*/

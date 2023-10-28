@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:08:24 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/23 12:52:21 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 10:50:13 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 			return (new_s1[i] - new_s2[i]);
 	return (0);
 }
+/*
+Essa função compara duas strings passadas (s1 e s2) até os
+primeiros N carateres (n). Caso as duas strings tenham algum
+caratere diferente, retorna a diferença entre eles na tabela
+ASCII, e, caso as duas strings sejam iguais, retorna zero.
+*/

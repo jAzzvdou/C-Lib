@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 17:03:21 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/23 15:16:57 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 10:45:31 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,12 @@ static size_t	house_places(int n)
 	}
 	return (places);
 }
+
+/*
+Essa função auxiliar conta quantas casas decimais o número N (n)
+tem. Caso o número seja negativo, a função conta mais um espaço
+para o "-".
+*/
 
 char	*ft_itoa(int n)
 {
@@ -53,3 +59,8 @@ char	*ft_itoa(int n)
 	}
 	return (new_s);
 }
+/*
+Essa função é o inverso da ft_atoi. Diferentemente da ft_atoi, que
+transforma uma string em um int, a ft_itoa transforma um int, seja
+ele negativo ou positivo, em uma string.
+*/

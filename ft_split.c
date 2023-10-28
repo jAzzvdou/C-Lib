@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 16:26:02 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/25 00:11:24 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 11:59:14 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,11 @@ static size_t	sub_str(char const *s, char c)
 	return (length);
 }
 
+/*
+Essa função auxiliar vai contar a quantidade das novas palavras
+que serão formadas.
+*/
+
 static void	free_split(char **final)
 {
 	size_t	i;
@@ -38,6 +43,12 @@ static void	free_split(char **final)
 		free(final[i]);
 	free(final);
 }
+
+/*
+Essa função auxiliar vai liberar a memória separada para as
+novas palavras caso algum erro durante o processo de alocação das
+mesmas na memória aconteça.
+*/
 
 char	**ft_split(char const *s, char c)
 {
@@ -67,3 +78,11 @@ char	**ft_split(char const *s, char c)
 	}
 	return (final[i] = NULL, final);
 }
+/*
+Essa função verifica se existe um caractere N (c) dentro de uma string N (s).
+Caso exista, quebrará a palavra na posição aonde caractere N está e as novas
+palavras formadas não conterão mais o caractere N nelas. Após a separação,
+as novas palavras são alocadas na memória separadas para os mesmas, caso ocorra
+algum erro durante esse processo, a memória separada é liberta para que não
+ocorra vazamentos.
+*/

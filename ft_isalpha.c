@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:38:03 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/23 14:54:35 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 10:25:20 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,8 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
+/*
+Essa função verifica se o argumento passado como parâmetro (c)
+é uma letra, seja ela maiúscula ou minúscula. Caso seja, retorna
+um número diferente de zero, e, caso não seja, retorna zero.
+*/

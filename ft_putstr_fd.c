@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:37:00 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/20 00:02:18 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 11:27:28 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,6 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	write(fd, s, i);
 }
+/*
+Essa função imprime uma string N (s) em uma saída N (fd).
+*/

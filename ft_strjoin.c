@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:06:43 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/23 15:05:51 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 12:19:37 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	new_s[i] = '\0';
 	return (new_s);
 }
+/*
+Essa função vai alocar memória para uma string X (s1) + uma string Y (s2) e
+vai concatená-las na memória alocada para as mesmas.
+*/

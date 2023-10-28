@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:12:23 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/23 15:51:38 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/28 11:26:45 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,7 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd((n % 10) + '0', fd);
 	}
 }
+/*
+Essa função imprime um número N (n) entre o int_min
+e o int_max em uma saída N (fd).
+*/
