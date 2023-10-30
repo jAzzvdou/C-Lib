@@ -64,10 +64,10 @@ $(NAME): $(OBJS)
 		$(CC) $(CFLAGS) -c $< 
 
 clean:
-		$(RM) $(OBJS) $(NAME)
+		$(RM) $(OBJS)
 
 fclean: clean
-	rm *.a -rf
+	$(RM) $(NAME)
 
 re: fclean all
 
