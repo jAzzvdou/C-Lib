@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 16:43:48 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/25 15:18:55 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/30 13:58:23 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	new_s = ft_substr(s1, 0, size_s1 + 1);
 	return (new_s);
 }
+/*
+Essa função remove os primeiros e os últimos N
+caracteres de uma string X (s1) a partir de um filtro (set).
+Exemplo:
+s1 = ././:;string;:\.\.
+filtro = ./:;\
+resultado = string
+*/

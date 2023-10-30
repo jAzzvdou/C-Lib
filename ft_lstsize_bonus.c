@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 16:33:47 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/27 16:33:49 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/30 16:22:14 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,7 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
+/*
+Essa função conta e retorna o número de nodes
+que existe em uma lista X (lst).
+*/

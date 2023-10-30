@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 22:24:17 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/19 23:37:19 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/30 16:53:01 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	new_s[i] = '\0';
 	return (new_s);
 }
+/*
+Essa função joga todos os caracteres de uma string X (s)
+para dentro de uma função X (f) e cria uma nova string,
+já com memória alocada para a mesma, com o resultado da 
+transformação desses caracteres feito pela função X.
+*/

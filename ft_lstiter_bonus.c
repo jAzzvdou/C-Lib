@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 16:32:25 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/27 16:32:27 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/30 16:31:52 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
+/*
+Essa função pega os nodes uma lista X (lst) e os
+aplica em uma função X (f).
+*/

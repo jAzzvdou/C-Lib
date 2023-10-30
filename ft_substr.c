@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 13:43:48 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/23 15:04:17 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/30 14:04:06 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	new_s[i] = '\0';
 	return (new_s);
 }
+/*
+Essa função irá procurar um caractere N (start) em uma string X (s)
+e, assim que o encontrar, alocará memória para o tamanho de N caracteres (len)
+e retornará a nova string.
+*/

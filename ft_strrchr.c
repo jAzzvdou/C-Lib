@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:05:28 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/20 00:08:40 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/30 13:53:11 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,9 @@ char	*ft_strrchr(const char *s, int c)
 			return ((char *)s + i);
 	return (NULL);
 }
+/*
+Essa função é parecida com a função ft_strchr, mas com uma diferença:
+Diferentemente da ft_strchr, a ft_strrchr verifica se um existe
+caractere N (c) em uma string X (s), lendo de trás para frente.
+Caso exista, ela retorna o caractere N, e, caso não exista, retorna NULL.
+*/

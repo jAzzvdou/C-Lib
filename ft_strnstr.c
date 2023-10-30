@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:08:25 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/23 14:37:02 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/30 13:03:43 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+/*
+Essa função procura uma string X (little) dentro de uma
+string Y (big) e, caso encontre, retorna a string X a partir
+da primeira ocorrência com um tamanho X (len).
+*/

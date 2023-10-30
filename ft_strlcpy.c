@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:03:04 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/28 12:25:28 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/30 12:53:05 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 }
 /*
 Essa função vai copiar N caracteres (size) iniciais de uma string X (str)
-e colar no final de uma string Y (dst).
+e colar no final de uma string Y (dst) e retornar o tamanho dessa cópia.
+Caso o retorno não tenha o tamanho dessa cópia, então houve algum erro
+durante a cópia e cola.
 */

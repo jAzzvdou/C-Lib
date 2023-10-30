@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 16:33:38 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/27 16:33:40 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/30 16:22:00 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,8 @@ t_list	*ft_lstnew(void *content)
 	new_l->next = NULL;
 	return (new_l);
 }
+/*
+Essa função cria um novo node em uma lista X (content)
+e aloca memória para o mesmo. Após isso, cria também
+um novo "NULL" para ser o final dessa lista X.
+*/
