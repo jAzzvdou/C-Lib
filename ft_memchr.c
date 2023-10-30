@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:52:40 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/28 11:37:17 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/30 18:44:20 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	i;
-	char	*new_s;
+	size_t			i;
+	unsigned char	*new_s;
 
 	i = -1;
-	new_s = (char *)s;
+	new_s = (unsigned char *)s;
 	while (n--)
-		if (new_s[++i] == c)
+		if (new_s[++i] == (unsigned char)c)
 			return (&new_s[i]);
 	return (NULL);
 }
