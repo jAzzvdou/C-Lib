@@ -6,7 +6,7 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:09:12 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/28 10:23:24 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/10/31 18:48:56 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ int	ft_isalnum(int c)
 }
 /*
 Essa função verifica se o argumento passado como parâmetro (c)
-é uma letra ou número, e, caso seja, retorna um número diferente
-de zero. Caso não seja, retorna zero.
+é uma letra ou número. Caso seja, retorna um número diferente
+de zero e, caso não seja, retorna zero.
 */
