@@ -60,6 +60,10 @@ all: $(NAME)
 $(NAME): $(OBJS)
 		ar rcs $(NAME) $(OBJS)
 
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
+	gcc -nostartfiles -shared -o libft.so $(OBJS)
+
 .c.o:
 		$(CC) $(CFLAGS) -c $< 
 
