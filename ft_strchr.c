@@ -6,9 +6,11 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:00:04 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/11/01 14:31:51 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/11/01 14:46:36 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
