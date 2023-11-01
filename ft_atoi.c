@@ -6,11 +6,9 @@
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:04:29 by jazevedo          #+#    #+#             */
-/*   Updated: 2023/10/30 18:27:02 by jazevedo         ###   ########.fr       */
+/*   Updated: 2023/11/01 14:18:52 by jazevedo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {
