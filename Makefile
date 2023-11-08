@@ -61,10 +61,10 @@ $(NAME): $(OBJS)
 		ar rcs $(NAME) $(OBJS)
 
 .c.o:
-		$(CC) $(CFLAGS) -c $< 
+		$(CC) $(CFLAGS) -c $<
 
 clean:
-		$(RM) $(OBJS)
+		$(RM) $(OBJS) $(OBJS_BONUS)
 
 fclean: clean
 	$(RM) $(NAME)
