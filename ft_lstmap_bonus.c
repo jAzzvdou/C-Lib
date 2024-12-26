@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
+/*   my_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*my_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new;
 	t_list	*new_l;
@@ -22,20 +22,20 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	new_l = NULL;
 	while (lst)
 	{
-		new = ft_lstnew(f(lst->content));
+		new = my_lstnew(f(lst->content));
 		if (new == NULL)
 		{
-			ft_lstclear(&new_l, del);
+			my_lstclear(&new_l, del);
 			return (NULL);
 		}
-		ft_lstadd_back(&new_l, new);
+		my_lstadd_back(&new_l, new);
 		lst = lst->next;
 	}
 	return (new_l);
 }
 /*
-Essa função é parecida com a ft_lstiter, mas com uma diferença:
-Diferentemente da ft_lstiter, a ft_lstmap, além de aplicar cada
+Essa função é parecida com a my_lstiter, mas com uma diferença:
+Diferentemente da my_lstiter, a my_lstmap, além de aplicar cada
 node de uma lista X (lst) em uma função X (f), ela irá criar uma
 nova lista para o resultados da transformação dos nodes da lista X,
 já com memória alocada para os mesmos. Caso algum erro aconteça,

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   my_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,15 +12,15 @@
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*my_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	size_t	s_size;
 	char	*new_s;
 
-	s_size = ft_strlen(s);
+	s_size = my_strlen(s);
 	if ((size_t)start > s_size)
-		return (ft_strdup(""));
+		return (my_strdup(""));
 	s += start;
 	s_size -= start;
 	if (s_size > len)

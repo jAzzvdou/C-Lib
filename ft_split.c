@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   my_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -50,7 +50,7 @@ novas palavras caso algum erro durante o processo de alocação das
 mesmas na memória aconteça.
 */
 
-char	**ft_split(char const *s, char c)
+char	**my_split(char const *s, char c)
 {
 	size_t	i;
 	size_t	words;
@@ -71,7 +71,7 @@ char	**ft_split(char const *s, char c)
 		wordsize = 0;
 		while (s[wordsize] && s[wordsize] != c)
 			wordsize++;
-		final[i] = ft_substr(s, 0, wordsize);
+		final[i] = my_substr(s, 0, wordsize);
 		if (final[i] == NULL)
 			return (free_split(final), NULL);
 		s += wordsize;

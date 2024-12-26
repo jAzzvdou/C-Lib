@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   my_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -33,15 +33,15 @@ tem. Caso o número seja negativo, a função conta mais um espaço
 para o "-".
 */
 
-char	*ft_itoa(int n)
+char	*my_itoa(int n)
 {
 	size_t	size_n;
 	char	*new_s;
 
 	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
+		return (my_strdup("-2147483648"));
 	if (n == 0)
-		return (ft_strdup("0"));
+		return (my_strdup("0"));
 	size_n = house_places(n);
 	new_s = malloc(sizeof(char) * (size_n + 1));
 	if (new_s == NULL)
@@ -60,7 +60,7 @@ char	*ft_itoa(int n)
 	return (new_s);
 }
 /*
-Essa função é o inverso da ft_atoi. Diferentemente da ft_atoi, que
-transforma uma string em um int, a ft_itoa transforma um int, seja
+Essa função é o inverso da my_atoi. Diferentemente da my_atoi, que
+transforma uma string em um int, a my_itoa transforma um int, seja
 ele negativo ou positivo, em uma string.
 */

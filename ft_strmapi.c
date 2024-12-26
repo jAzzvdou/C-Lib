@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   my_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,12 +12,12 @@
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*my_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	i;
 	char	*new_s;
 
-	new_s = malloc(sizeof(char) * (ft_strlen(s) + 1));
+	new_s = malloc(sizeof(char) * (my_strlen(s) + 1));
 	if (new_s == NULL)
 		return (NULL);
 	i = -1;

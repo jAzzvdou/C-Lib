@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   my_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,12 +12,12 @@
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*my_strjoin(char const *s1, char const *s2)
 {
 	size_t	i;
 	char	*new_s;
 
-	new_s = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	new_s = malloc(sizeof(char) * (my_strlen(s1) + my_strlen(s2) + 1));
 	if (new_s == NULL)
 		return (NULL);
 	i = 0;

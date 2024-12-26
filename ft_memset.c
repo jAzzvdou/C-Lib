@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   my_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void	*my_memset(void *s, int c, size_t n)
 {
 	char	*zero_s;
 
@@ -22,7 +22,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	return ((void *)zero_s);
 }
 /*
-Essa função é parecida com a ft_bzero, mas com uma pequena diferença:
-Diferentemente da ft_bzero, na ft_memset é possível escolher qual o
+Essa função é parecida com a my_bzero, mas com uma pequena diferença:
+Diferentemente da my_bzero, na my_memset é possível escolher qual o
 caractere (c) que vai preencher N (n) casas de uma string (s).
 */

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   my_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*my_strrchr(const char *s, int c)
 {
 	size_t	i;
 	char	chaz;
@@ -28,8 +28,8 @@ char	*ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 /*
-Essa função é parecida com a função ft_strchr, mas com uma diferença:
-Diferentemente da ft_strchr, a ft_strrchr verifica se um existe
+Essa função é parecida com a função my_strchr, mas com uma diferença:
+Diferentemente da my_strchr, a my_strrchr verifica se um existe
 caractere N (c) em uma string X (s), lendo de trás para frente.
 Caso exista, ela retorna o caractere N, e, caso não exista, retorna NULL.
 */

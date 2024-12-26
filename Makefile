@@ -1,49 +1,49 @@
 NAME	=	libft.a
 
-SRCS	=	ft_atoi.c \
-		ft_bzero.c \
-		ft_calloc.c \
-		ft_isalnum.c \
-		ft_isalpha.c \
-		ft_isascii.c \
-		ft_isdigit.c \
-		ft_isprint.c \
-		ft_itoa.c \
-		ft_memchr.c \
-		ft_memcmp.c \
-		ft_memcpy.c \
-		ft_memmove.c \
-		ft_memset.c \
-		ft_putchar_fd.c \
-		ft_putendl_fd.c \
-		ft_putnbr_fd.c \
-		ft_putstr_fd.c \
-		ft_split.c \
-		ft_strchr.c \
-		ft_strdup.c \
-		ft_striteri.c \
-		ft_strjoin.c \
-		ft_strlcat.c \
-		ft_strlcpy.c \
-		ft_strlen.c \
-		ft_strmapi.c \
-		ft_strncmp.c \
-		ft_strnstr.c \
-		ft_strrchr.c \
-		ft_strtrim.c \
-		ft_substr.c \
-		ft_tolower.c \
-		ft_toupper.c
+SRCS	=	my_atoi.c \
+		my_bzero.c \
+		my_calloc.c \
+		my_isalnum.c \
+		my_isalpha.c \
+		my_isascii.c \
+		my_isdigit.c \
+		my_isprint.c \
+		my_itoa.c \
+		my_memchr.c \
+		my_memcmp.c \
+		my_memcpy.c \
+		my_memmove.c \
+		my_memset.c \
+		my_putchar_fd.c \
+		my_putendl_fd.c \
+		my_putnbr_fd.c \
+		my_putstr_fd.c \
+		my_split.c \
+		my_strchr.c \
+		my_strdup.c \
+		my_striteri.c \
+		my_strjoin.c \
+		my_strlcat.c \
+		my_strlcpy.c \
+		my_strlen.c \
+		my_strmapi.c \
+		my_strncmp.c \
+		my_strnstr.c \
+		my_strrchr.c \
+		my_strtrim.c \
+		my_substr.c \
+		my_tolower.c \
+		my_toupper.c
 
-SRCS_BONUS 	=	ft_lstadd_back_bonus.c \
-			ft_lstadd_front_bonus.c \
-			ft_lstclear_bonus.c \
-			ft_lstdelone_bonus.c \
-			ft_lstiter_bonus.c \
-			ft_lstlast_bonus.c \
-			ft_lstmap_bonus.c \
-			ft_lstnew_bonus.c \
-			ft_lstsize_bonus.c
+SRCS_BONUS 	=	my_lstadd_back_bonus.c \
+			my_lstadd_front_bonus.c \
+			my_lstclear_bonus.c \
+			my_lstdelone_bonus.c \
+			my_lstiter_bonus.c \
+			my_lstlast_bonus.c \
+			my_lstmap_bonus.c \
+			my_lstnew_bonus.c \
+			my_lstsize_bonus.c
 		
 OBJS	=	$(SRCS:.c=.o)
 

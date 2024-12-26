@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   my_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,16 +12,16 @@
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+char	*my_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	little_size;
 
-	little_size = ft_strlen(little);
+	little_size = my_strlen(little);
 	if (little_size == 0)
 		return ((char *)big);
 	while (*big && little_size <= len--)
 	{
-		if (ft_strncmp(big, little, little_size) == 0)
+		if (my_strncmp(big, little, little_size) == 0)
 			return ((char *)big);
 		big++;
 	}

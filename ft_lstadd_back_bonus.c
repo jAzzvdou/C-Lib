@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
+/*   my_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jazevedo <jazevedo@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,14 +12,14 @@
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	my_lstadd_back(t_list **lst, t_list *new)
 {
 	if (*lst == NULL)
 	{
 		*lst = new;
 		return ;
 	}
-	ft_lstlast(*lst)->next = new;
+	my_lstlast(*lst)->next = new;
 }
 /*
 Essa função adiciona um novo node (new)
